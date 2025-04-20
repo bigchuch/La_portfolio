@@ -7,16 +7,16 @@ const Hero = () => {
   return (
     <div className=" w-full  h-[95vh] ">
 
-      <div className="max-w-7xl px-4 flex flex-col md:px-8 md:grid md:grid-cols-1fr-2fr md:h-full  ">
+      <div className="max-w-7xl px-4 flex flex-col md:px-8 md:grid md:grid-cols-5 md:h-full gap-8 ">
 
-        <div className="border-2 border-white md:flex md:flex-col md:justify-end md:pb-20">
+        <div className="e md:flex md:flex-col col-span-2 md:justify-end md:pb-20">
           <div className="mt-16 font-geist-sans ">
-            <h1 className="text-4xl ">Emmanuel Olawale <span className="block">Alawode</span> </h1>
-            <h2 className="text-md mt-4  ">Software Engineer / Solution Achitech </h2>
-            <p className="text-sm mt-4 w-[70%] text-justify">Cuban-born and self-taught, I bring a unique blend of passion and proficiency to development and design. Obsessed with performance and dedicated to crafting clean, impactful designs, my work is a testament to the fusion of skill and creativity.</p>
+            <h1 className="text-4x md:text-2xl ">Emmanuel Olawale <span className="block">Alawode</span> </h1>
+            <h2 className="text-md mt-4  md:text-sm ">Software Engineer / Solution Achitech </h2>
+            <p className="text-sm mt-4 w-[70%] text-justify md:w-[90%] md:text-sm">Drogo and self-taught, I bring a unique blend of passion and proficiency to development and design. Obsessed with performance and dedicated to crafting clean, impactful designs, my work is a testament to the fusion of skill and creativity.</p>
           </div>
 
-          <hr className="w-50 mt-4 border-1 border-black dark:border-white"/>
+          <hr className="w-50 mt-4 md:w-[80%] border-1 border-black dark:border-white"/>
 
           <div className="flex items-center gap-4 mt-4">
             {/* socials links */}
@@ -35,7 +35,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="border-2 border-white  mt-8 font-prata text-6xl flex flex-col gap-8 items-end md:items-start md:text-7xl md:justify-center ">
+        <div className="  mt-8 font-prata text-6xl flex flex-col gap-8 items-end md:items-start md:text-7xl md:justify-center md:col-span-3 overflow-clip ">
 
           {/* navbar link */}
           <div>

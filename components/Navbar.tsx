@@ -33,7 +33,7 @@ const Navbar = () => {
             </Link>
           </div>
           
-          <div>
+          {/* <div>
             <Link href="/projects" className="flex items-center gap-1 ">
               PROJECTS
             </Link>
@@ -44,7 +44,7 @@ const Navbar = () => {
               ABOUT
             </Link>
 
-          </div>
+          </div> */}
           <div className=" rounded-full p-1">
             <ThemeToggle  />
           </div>
