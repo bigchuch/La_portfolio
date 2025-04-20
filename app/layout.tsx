@@ -1,8 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono , Inter } from "next/font/google";
+import { Geist, Geist_Mono , Inter , Prata} from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Navbar from "@/components/Navbar";
+
+const prata = Prata({
+  variable: "--font-prata",
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,12 +37,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable}  ${inter.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable}  ${inter.variable} ${prata.variable} antialiased `}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
          
           <Navbar />
           
-          <main className="px-6 pt-6">{children}</main>
+          <main className="">{children}</main>
         </ThemeProvider>
       </body>
     </html>
