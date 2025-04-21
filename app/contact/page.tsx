@@ -4,9 +4,9 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const SERVICE_ID = ""; // your EmailJS service ID
-  const TEMPLATE_ID = ""; // your EmailJS template ID
-  const PUBLIC_KEY = ""; // your EmailJS public key
+  const SERVICE_ID = "process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID"; // your EmailJS service ID
+  const TEMPLATE_ID = "process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID"; // your EmailJS template ID
+  const PUBLIC_KEY = "process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY"; // your EmailJS public key
 
   const [formData, setFormData] = useState({
     email: "",
