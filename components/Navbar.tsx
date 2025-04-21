@@ -20,16 +20,16 @@ const Navbar = () => {
   const isContactPage = usePathname() === "/contact";
 
   return (
-    <div className="w-full z-50 fixed top-0 left-0 dark:bg-dark shadow-md transition-transform duration-500 ease-in-out">
+    <div className="w-full z-10 fixed top-0 left-0 bg-white dark:bg-black shadow-md transition-transform duration-500 ease-in-out">
 
       <nav className=" mx-auto max-w-7xl  flex items-center justify-between p-4 border-b">
         {/* Logo */}
-        <Link href="/" className="text-xl font-bold">
+        <Link href="/" className="text-xl font-bold z-20">
           La.dev
         </Link>
 
         {/* Desktop Nav Links */}
-        <div className="hidden md:flex md:items-center md:justify-center gap-6 text-sm  ">
+        <div className="z-20 hidden md:flex md:items-center md:justify-center gap-6 text-sm  ">
           {/* Logo */}
           <div>
             <Link href="/" className="flex items-center gap-1 ">
@@ -46,21 +46,21 @@ const Navbar = () => {
           
           {(!isHomePage && !isAboutPage) && (
             <div>
-              <Link href="/projects" className="flex items-center gap-1 ">
+              <Link href="/about" className="flex items-center gap-1 ">
                 ABOUT
               </Link>
             </div>)}
 
           {(!isHomePage && !isServicesPage) && (
             <div>
-              <Link href="/projects" className="flex items-center gap-1 ">
+              <Link href="/services" className="flex items-center gap-1 ">
                 SERVICES
               </Link>
             </div>)}
           
           {(!isHomePage && !isContactPage) && (
             <div>
-              <Link href="/projects" className="flex items-center gap-1 ">
+              <Link href="/contact" className="flex items-center gap-1 ">
                 CONTACT
               </Link>
             </div>)}
@@ -104,21 +104,21 @@ const Navbar = () => {
           
           {(!isHomePage && !isAboutPage) && (
             <div>
-              <Link href="/projects" className="flex items-center gap-1 ">
+              <Link href="/about" className="flex items-center gap-1 ">
                 ABOUT
               </Link>
             </div>)}
 
           {(!isHomePage && !isServicesPage) && (
             <div>
-              <Link href="/projects" className="flex items-center gap-1 ">
+              <Link href="/services" className="flex items-center gap-1 ">
                 SERVICES
               </Link>
             </div>)}
           
           {(!isHomePage && !isContactPage) && (
             <div>
-              <Link href="/projects" className="flex items-center gap-1 ">
+              <Link href="/contact" className="flex items-center gap-1 ">
                 CONTACT
               </Link>
             </div>)}

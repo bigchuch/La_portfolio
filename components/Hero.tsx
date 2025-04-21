@@ -55,7 +55,7 @@ const Hero = () => {
             </Link>
           </div>
           <div>
-            <Link href="/" className="flex items-center gap-1 ">
+            <Link href="/contact" className="flex items-center gap-1 ">
               CONTACT
             </Link>
           </div>
