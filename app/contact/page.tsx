@@ -3,12 +3,13 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 
-const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
-const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
-const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
 
-const Contact = () => { // your EmailJS public key
+
+const Contact = () => { 
+    const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;// your EmailJS public key
 
   const [formData, setFormData] = useState({
     email: "",
@@ -20,7 +21,7 @@ const Contact = () => { // your EmailJS public key
     e.preventDefault();
 
     emailjs
-      .sendForm(SERVICE_ID, TEMPLATE_ID, e.currentTarget, PUBLIC_KEY)
+      .sendForm(SERVICE_ID!, TEMPLATE_ID!, e.currentTarget, PUBLIC_KEY!)
       .then(() => {
         alert("Message Sent!");
         setFormData({ email: "", subject: "", message: "" });
@@ -28,12 +29,13 @@ const Contact = () => { // your EmailJS public key
       .catch((error) => {
         alert("Let's try again. I'm sure it'll work now!");
         console.error("EmailJS Error:", error);
+        console.log("SERVICE_ID", SERVICE_ID);
       });
   };
 
   return (
-    <section className="bg-white dark:bg-gray-900 mt-50">
-      <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+    <section className="w-full mt-24">
+      <div className="px-4 mx-auto max-w-screen-md">
         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
           Contact Us
         </h2>
@@ -42,7 +44,7 @@ const Contact = () => { // your EmailJS public key
           Need details about our Business plan? Let us know.
         </p>
 
-        <form className="space-y-8" onSubmit={handleSubmit}>
+        <form className="space-y-8 p-4 rounded-xl border bg-white/50 dark:bg-white/5 border-black/20 dark:border-white/10  hover:-translate-y-1 transition-transform " onSubmit={handleSubmit}>
           <div>
             <label
               htmlFor="email"
@@ -60,7 +62,7 @@ const Contact = () => { // your EmailJS public key
                 setFormData({ ...formData, email: e.target.value })
               }
               className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-              placeholder="name@flowbite.com"
+              placeholder="name@mail.com"
             />
           </div>
 
