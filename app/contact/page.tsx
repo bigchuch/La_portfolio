@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState ,useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 
@@ -11,7 +11,12 @@ const Contact = () => {
     const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
     const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;// your EmailJS public key
 
+    useEffect(() => {
+      emailjs.init(PUBLIC_KEY!);
+    }, []);
+
   const [formData, setFormData] = useState({
+    name: "",
     email: "",
     subject: "",
     message: "",
@@ -24,7 +29,7 @@ const Contact = () => {
       .sendForm(SERVICE_ID!, TEMPLATE_ID!, e.currentTarget, PUBLIC_KEY!)
       .then(() => {
         alert("Message Sent!");
-        setFormData({ email: "", subject: "", message: "" });
+        setFormData({ name:"" ,email: "", subject: "", message: "" });
       })
       .catch((error) => {
         alert("Let's try again. I'm sure it'll work now!");
@@ -40,11 +45,32 @@ const Contact = () => {
           Contact Us
         </h2>
         <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-          Got a technical issue? Want to send feedback about a beta feature?
-          Need details about our Business plan? Let us know.
+          Got a technical issue? Want to reach out to La.?
+          Need details about our Business Relation plan? Let us know.
         </p>
 
         <form className="space-y-8 p-4 rounded-xl border bg-white/50 dark:bg-white/5 border-black/20 dark:border-white/10  hover:-translate-y-1 transition-transform " onSubmit={handleSubmit}>
+          <div>
+            <label
+              htmlFor="name"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >
+              Your name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              value={formData.name}
+              onChange={(e) =>
+                setFormData({ ...formData, name: e.target.value })
+              }
+              className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              placeholder="John Doe"
+            />
+          </div>
+
           <div>
             <label
               htmlFor="email"
@@ -107,13 +133,16 @@ const Contact = () => {
               placeholder="Leave a comment..."
             />
           </div>
+          <div className="flex items-center justify-center">
 
-          <button
-            type="submit"
-            className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Send message
-          </button>
+            <button
+              type="submit"
+              className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Send message
+            </button>
+
+          </div>
         </form>
       </div>
     </section>
