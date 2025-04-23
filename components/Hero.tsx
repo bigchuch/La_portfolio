@@ -36,23 +36,23 @@ const Hero = () => {
 
           {/* navbar link */}
           <div>
-            <Link href="/projects" className="flex items-center gap-1 font-prata     focus:ring-4 hover:italic">
+            <Link href="/projects" className="flex items-center gap-1 font-prata  hover:italic transition-all duration-300">
               PROJECT
             </Link>
           </div>
           <div>
-            <Link href="/services" className="flex items-center gap-1  focus:ring-4 hover:italic">
+            <Link href="/services" className="flex items-center gap-1  hover:italic transition-all duration-500">
               SERVICES
             </Link>
           </div>
 
           <div>
-            <Link href="/about" className="flex items-center gap-1 focus:ring-4 hover:italic">
+            <Link href="/about" className="flex items-center gap-1 hover:italic transition-all duration-700">
               ABOUT
             </Link>
           </div>
           <div>
-            <Link href="/contact" className="flex items-center gap-1  focus:ring-4 hover:italic ">
+            <Link href="/contact" className="flex items-center gap-1   hover:italic transition-all duration-900 ">
               CONTACT
             </Link>
           </div>
