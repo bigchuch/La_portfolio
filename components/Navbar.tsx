@@ -25,7 +25,11 @@ const Navbar = () => {
       <nav className=" mx-auto max-w-7xl  flex items-center justify-between p-4 border-b">
         {/* Logo */}
         <Link href="/" className="text-xl font-bold z-20">
+<<<<<<< HEAD
           La. <span className="text-blue-700 text-bold">dev</span> 
+=======
+          La.<span className="text-blue-700">dev</span> 
+>>>>>>> ab6fed5f06af06261e8dafbe8f5dfd5ea82efca3
         </Link>
 
         {/* Desktop Nav Links */}

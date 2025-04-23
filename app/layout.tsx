@@ -42,7 +42,11 @@ export default function RootLayout({
          
           <Navbar />
           
+<<<<<<< HEAD
           <main className="transition-colors duration-300 ease-in-out">{children}</main>
+=======
+          <main className="transition-colors duration-500 ease-in-out">{children}</main>
+>>>>>>> ab6fed5f06af06261e8dafbe8f5dfd5ea82efca3
         </ThemeProvider>
       </body>
     </html>
