@@ -10,8 +10,8 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:px-8 md:grid md:grid-cols-5 md:h-full gap-8 lg:gap-24 ">
 
         <div className="e md:flex md:flex-col col-span-2 md:justify-end md:pb-20">
-          <div className="mt-16 font-geist-sans sm:w-fit pt-2">
-            <h1 className="text-4x md:text-2xl lg:text-3xl ">Emmanuel Olawale <span className="block">Alawode</span> </h1>
+          <div className="mt-16 font-geist-sans sm:w-fit pt-2  ">
+            <h1 className="text-4x md:text-2xl lg:text-3xl hover:italic transition-all duration-500 ">Emmanuel Olawale <span className="block">Alawode</span> </h1>
             <h2 className="text-md mt-4  md:text-sm lg:text-md ">Software Engineer / Solution Achitech </h2>
             <p className="text-sm mt-4 w-[70%] text-justify md:w-[90%] md:text-sm lg:text-md">Drogo and self-taught, I bring a unique blend of passion and proficiency to development and design. Obsessed with performance and dedicated to crafting clean, impactful designs, my work is a testament to the fusion of skill and creativity.</p>
           </div>
@@ -36,7 +36,7 @@ const Hero = () => {
 
           {/* navbar link */}
           <div>
-            <Link href="/projects" className="flex items-center gap-1 font-prata  hover:italic transition-all duration-300">
+            <Link href="/projects" className="flex items-center gap-1 font-prata  hover:skew-x-3 transition-all duration-300">
               PROJECT
             </Link>
           </div>
