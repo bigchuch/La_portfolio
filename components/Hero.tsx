@@ -11,7 +11,7 @@ const Hero = () => {
 
         <div className="e md:flex md:flex-col col-span-2 md:justify-end md:pb-20">
           <div className="mt-16 font-geist-sans sm:w-fit pt-2  ">
-            <h1 className="text-4x md:text-2xl lg:text-3xl hover:italic transition-all duration-500 ">Emmanuel Olawale <span className="block">Alawode</span> </h1>
+            <h1 className="text-4x md:text-2xl lg:text-3xl  font-prata">Emmanuel Olawale <span className="block">Alawode</span> </h1>
             <h2 className="text-md mt-4  md:text-sm lg:text-md ">Software Engineer / Solution Achitech </h2>
             <p className="text-sm mt-4 w-[70%] text-justify md:w-[90%] md:text-sm lg:text-md">Drogo and self-taught, I bring a unique blend of passion and proficiency to development and design. Obsessed with performance and dedicated to crafting clean, impactful designs, my work is a testament to the fusion of skill and creativity.</p>
           </div>
@@ -35,13 +35,13 @@ const Hero = () => {
         <div className="  mt-8 font-prata text-6xl flex flex-col gap-8 items-end md:items-start md:text-7xl lg:text-8xl xl:text-9xl md:justify-center md:col-span-3 overflow-clip ">
 
           {/* navbar link */}
-          <div>
-            <Link href="/projects" className="flex items-center gap-1 font-prata  hover:skew-x-3 transition-all duration-300">
+          <div className="hover:skew-x-3 transition-all duration-300">
+            <Link href="/projects" className="flex items-center gap-1 hover:italic transition-all duration-500">
               PROJECT
             </Link>
           </div>
           <div>
-            <Link href="/services" className="flex items-center gap-1  hover:italic transition-all duration-500">
+            <Link href="/services" className="flex items-center gap-1  hover:text-blue-700 hover:text- transition-text-color duration-500">
               SERVICES
             </Link>
           </div>

@@ -1,6 +1,6 @@
 // app/portfolio/page.tsx
 import { projectsDb } from "@/lib/projectsDb";
-import ProjectCard from "@/components/ProjectCard";
+import ProjectCard from "./ProjectCard";
 
 export default function ProjectsPage() {
   return (

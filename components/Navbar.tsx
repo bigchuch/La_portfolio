@@ -25,7 +25,7 @@ const Navbar = () => {
       <nav className=" mx-auto max-w-7xl  flex items-center justify-between p-4 border-b">
         {/* Logo */}
         <Link href="/" className="text-xl font-bold z-20">
-          La.dev
+          La.<span className="text-blue-700">dev</span> 
         </Link>
 
         {/* Desktop Nav Links */}

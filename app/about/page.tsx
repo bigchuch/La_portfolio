@@ -1,7 +1,7 @@
-import AboutSection from "@/components/AboutSection";
-import DownloadCVButton from "@/components/DownloadCvButton";
-import ExperienceSection from "@/components/ExperienceSection";
-import Technologies from "@/components/Technologies";
+import AboutSection from "./AboutSection";
+import DownloadCVButton from "./DownloadCvButton";
+import ExperienceSection from "./ExperienceSection";
+import Technologies from "./Technologies";
 
 
 
