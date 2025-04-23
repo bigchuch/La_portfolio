@@ -35,41 +35,24 @@ const Hero = () => {
         <div className="  mt-8 font-prata text-6xl flex flex-col gap-8 items-end md:items-start md:text-7xl lg:text-8xl xl:text-9xl md:justify-center md:col-span-3 overflow-clip ">
 
           {/* navbar link */}
-<<<<<<< HEAD
-          <div>
-            <Link href="/projects" className="flex items-center gap-1 font-prata   hover:italic transition-all duration-300 ease-in-out ">
-=======
           <div className="hover:skew-x-3 transition-all duration-300">
             <Link href="/projects" className="flex items-center gap-1 hover:italic transition-all duration-500">
->>>>>>> ab6fed5f06af06261e8dafbe8f5dfd5ea82efca3
               PROJECT
             </Link>
           </div>
           <div>
-<<<<<<< HEAD
-            <Link href="/services" className="flex items-center gap-1 hover:italic transition-all duration-500 ease-in-out">
-=======
             <Link href="/services" className="flex items-center gap-1  hover:text-blue-700 hover:text- transition-text-color duration-500">
->>>>>>> ab6fed5f06af06261e8dafbe8f5dfd5ea82efca3
               SERVICES
             </Link>
           </div>
 
           <div>
-<<<<<<< HEAD
-            <Link href="/about" className="flex items-center gap-1 hover:italic transition-all duration-700 ease-in-out">
-=======
             <Link href="/about" className="flex items-center gap-1 hover:italic transition-all duration-700">
->>>>>>> ab6fed5f06af06261e8dafbe8f5dfd5ea82efca3
               ABOUT
             </Link>
           </div>
           <div>
-<<<<<<< HEAD
-            <Link href="/contact" className="flex items-center gap-1  hover:italic transition-all duration-900 ease-in-out ">
-=======
             <Link href="/contact" className="flex items-center gap-1   hover:italic transition-all duration-900 ">
->>>>>>> ab6fed5f06af06261e8dafbe8f5dfd5ea82efca3
               CONTACT
             </Link>
           </div>

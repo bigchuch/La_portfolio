@@ -25,11 +25,7 @@ const Navbar = () => {
       <nav className=" mx-auto max-w-7xl  flex items-center justify-between p-4 border-b">
         {/* Logo */}
         <Link href="/" className="text-xl font-bold z-20">
-<<<<<<< HEAD
-          La. <span className="text-blue-700 text-bold">dev</span> 
-=======
           La.<span className="text-blue-700">dev</span> 
->>>>>>> ab6fed5f06af06261e8dafbe8f5dfd5ea82efca3
         </Link>
 
         {/* Desktop Nav Links */}
@@ -94,35 +90,35 @@ const Navbar = () => {
           <div  onClick={toggleMenu} className={`absolute -z-10 top-0 left-0 w-full h-screen bg-white dark:bg-black   transition-transform duration-500 ease-in-out ${isOpen ? "translate-x-0" : "-translate-x-full"} flex flex-col items-center justify-center gap-6 text-sm md:hidden`}>
             
             <div>
-            <Link href="/" className="flex items-center gap-1 ">
+            <Link href="/" className="flex items-center gap-1 hover:italic transition-all duration-300 ease-in-out">
               <Home className="w-4 h-4 font-bold " />
             </Link>
           </div>
           
           {(!isHomePage && !isProjectsPage) && (
             <div>
-              <Link href="/projects" className="flex items-center gap-1 ">
+              <Link href="/projects" className="flex items-center gap-1 hover:italic transition-all duration-300 ease-in-out">
                 PROJECTS
               </Link>
             </div>)}
           
           {(!isHomePage && !isAboutPage) && (
             <div>
-              <Link href="/about" className="flex items-center gap-1 ">
+              <Link href="/about" className="flex items-center gap-1 hover:italic transition-all duration-500 ease-in-out ">
                 ABOUT
               </Link>
             </div>)}
 
           {(!isHomePage && !isServicesPage) && (
             <div>
-              <Link href="/services" className="flex items-center gap-1 ">
+              <Link href="/services" className="flex items-center gap-1 hover:italic transition-all duration-700 ease-in-out ">
                 SERVICES
-              </Link>
+              </Link> 
             </div>)}
           
           {(!isHomePage && !isContactPage) && (
             <div>
-              <Link href="/contact" className="flex items-center gap-1 ">
+              <Link href="/contact" className="flex items-center gap-1 hover:italic transition-all duration-900 ease-in-out ">
                 CONTACT
               </Link>
             </div>)}
