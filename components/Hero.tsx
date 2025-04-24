@@ -20,13 +20,13 @@ const Hero = () => {
 
           <div className="flex items-center gap-4 mt-4">
             {/* socials links */}
-            <Link href="https://github.com/emmabobo" className="flex items-center gap-1 hover:text-gray-900">
+            <Link href="https://github.com/emmabobo" className="flex items-center gap-1 hover:text-blue-700">
               <Github className="w-6 h-6 font-bold " />
             </Link>
-            <Link href="httpgithub.com" className="flex items-center gap-1 hover:text-gray-900">
+            <Link href="httpgithub.com" className="flex items-center gap-1 hover:text-blue-700">
               <Slack className="w-6 h-6 font-bold " />
             </Link>
-            <Link href="www.linkedin.com/in/emmanuel-alawode-b13a241b4" className="flex items-center gap-1 hover:text-gray-900">
+            <Link href="www.linkedin.com/in/emmanuel-alawode-b13a241b4" className="flex items-center gap-1 hover:text-blue-700">
               <Linkedin  className="w-6 h-6 font-bold " />
             </Link>
           </div>
@@ -41,18 +41,18 @@ const Hero = () => {
             </Link>
           </div>
           <div>
-            <Link href="/services" className="flex items-center gap-1  ">
+            <Link href="/services" className="flex items-center gap-1 hover:italic transition-all duration-300  ">
               SERVICES
             </Link>
           </div>
 
           <div>
-            <Link href="/about" className="flex items-center gap-1 hover:italic transition-all duration-700">
+            <Link href="/about" className="flex items-center gap-1 hover:italic transition-all duration-300">
               ABOUT
             </Link>
           </div>
           <div>
-            <Link href="/contact" className="flex items-center gap-1   hover:italic transition-all duration-900 ">
+            <Link href="/contact" className="flex items-center gap-1 hover:italic transition-all duration-300 ">
               CONTACT
             </Link>
           </div>
