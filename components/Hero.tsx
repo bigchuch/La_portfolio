@@ -35,13 +35,13 @@ const Hero = () => {
         <div className="  mt-8 font-prata text-6xl flex flex-col gap-8 items-end md:items-start md:text-7xl lg:text-8xl xl:text-9xl md:justify-center md:col-span-3 overflow-clip ">
 
           {/* navbar link */}
-          <div className="hover:skew-x-3 transition-all duration-300">
-            <Link href="/projects" className="flex items-center gap-1 hover:italic transition-all duration-500">
+          <div className="">
+            <Link href="/projects" className="flex items-center gap-1 hover:italic transition-all duration-300">
               PROJECT
             </Link>
           </div>
           <div>
-            <Link href="/services" className="flex items-center gap-1  hover:text-blue-700 hover:text- transition-text-color duration-500">
+            <Link href="/services" className="flex items-center gap-1  ">
               SERVICES
             </Link>
           </div>
