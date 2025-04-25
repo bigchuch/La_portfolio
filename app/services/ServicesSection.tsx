@@ -1,5 +1,4 @@
 import {services}  from "@/lib/servicesDB";
-Image from "next/image";
 
 const ServicesSection = () => {
   return (
@@ -11,17 +10,7 @@ const ServicesSection = () => {
             key={index}
             className="p-6 bg-white/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-xl hover:-translate-y-1 transition-transform backdrop-blur"
           >
-            <div className="mb-4">
-              <Image
-                src={service.icon}
-
-                alt={service.title}
-                width={300}
-                height={250}
-                className="rounded-t-lg w-full "
-              />
-              
-              </div>
+            <div className="mb-4">{service.icon}</div>
             <h2 className="text-xl font-semibold text-white">{service.title}</h2>
             <p className="text-sm text-gray-300 mt-2">{service.description}</p>
           </div>

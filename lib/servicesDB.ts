@@ -1,13 +1,6 @@
 // types/services.ts
 
-import {
-  Code,
-  Brush,
-  Settings,
-  Database,
-  Smartphone,
-  Cloud,
-} from "lucide-react";
+
 
 export type Service = {
   
