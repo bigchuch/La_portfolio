@@ -12,13 +12,15 @@ export default function ProjectCard({ title, description, imageUrl, href }: Proj
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
       <Link href={href}>
-        <Image
-          src={imageUrl}
-          alt={title}
-          width={400}
-          height={250}
-          className="rounded-t-lg w-full object-cover"
-        />
+        <div className="relative h-[250px] overflow-clip rounded-t-lg border-b bg-white/50 dark:bg-white/5 border-black/20 dark:border-white/10 light:border-black/10 light:bg-black/5 hover:-translate-y-1 transition-transform">
+          <Image
+            src={imageUrl}
+            alt={title}
+            width={300}
+            height={250}
+            className="rounded-t-lg w-full object-cover"
+          />
+        </div>
       </Link>
       <div className="p-5">
         <Link href={href}>

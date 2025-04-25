@@ -11,7 +11,7 @@ const Hero = () => {
 
         <div className="e md:flex md:flex-col col-span-2 md:justify-end md:pb-20">
           <div className="mt-16 font-geist-sans sm:w-fit pt-2  ">
-            <h1 className="text-4x md:text-2xl lg:text-3xl  font-prata">Emmanuel Olawale <span className="block">Alawode</span> </h1>
+            <h1 className="text-4x font-bold md:text-2xl lg:text-3xl  font-prata">Emmanuel Olawale <span className="block">Alawode</span> </h1>
             <h2 className="text-md mt-4  md:text-sm lg:text-md ">Software Engineer / Solution Achitech </h2>
             <p className="text-sm mt-4 w-[70%] text-justify md:w-[90%] md:text-sm lg:text-md">Drogo, Na self-taught, I bring a unique blend of passion and proficiency to development and design. Obsessed with performance and dedicated to crafting clean, impactful designs, my work is a testament to the fusion of skill and creativity.</p>
           </div>

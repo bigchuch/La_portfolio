@@ -10,39 +10,40 @@ import {
 } from "lucide-react";
 
 export type Service = {
-  icon: string ;
+  
+  icon: string;
   title: string;
   description: string;
 };
 
 export const services: Service[] = [
   {
-    icon: `<Code />`,
+    icon: "./Hero1.jpeg",
     title: "Web Development",
     description: "Modern, scalable websites built with React, Next.js, and Tailwind CSS.",
   },
   {
-    icon: "<Brush />",
+    icon: "./Hero1.jpeg",
     title: "UI/UX Design",
     description: "Creating clean and user-friendly interfaces with Figma and modern design principles.",
   },
   {
-    icon: "<Settings />",
+    icon: "./Hero1.jpeg",
     title: "API Integration",
     description: "Connecting frontend apps to robust APIs and external services.",
   },
   {
-    icon: "<Database />",
+    icon: "./Hero1.jpeg",
     title: "Backend Development",
     description: "Secure and scalable server-side apps using Node.js and MongoDB.",
   },
   {
-    icon: "<Smartphone />",
+    icon: "./Hero1.jpeg",
     title: "Responsive Design",
     description: "Mobile-first development that ensures seamless experience across all devices.",
   },
   {
-    icon:   `<Cloud />`,
+    icon:  "./Hero1.jpeg",
     title: "Deployment & Hosting",
     description: "CI/CD pipelines, cloud deployment on platforms like Vercel, Netlify, and more.",
   },

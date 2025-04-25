@@ -7,7 +7,7 @@ const AboutSection = () => {
     <section className="my-16 grid gap-6 lg:grid-cols-2 ">
       {/* About Text */}
       <div className="p-4 rounded-xl border bg-white/50 dark:bg-white/5 border-black/20 dark:border-white/10 light:border-black/10 light:bg-black/5 hover:-translate-y-1 transition-transform">
-        <h2 className="mt-4 text-2xl font-semibold text-amber-500">
+        <h2 className="mt-4 text-2xl font-semibold text-blue-500">
           Emmanuel Olawale <span className="text-black dark:text-white">Alawode</span>
         </h2>
         <p className="mt-2  leading-relaxed">
@@ -20,13 +20,13 @@ const AboutSection = () => {
       </div>
 
       {/* About Image */}
-      <div className="relative flex items-center justify-center">
+      <div className="relative flex items-start h-[500px] w-[500px] overflow-clip rounded-xl border bg-white/50 dark:bg-white/5 border-black/20 dark:border-white/10 light:border-black/10 light:bg-black/5 hover:-translate-y-1 transition-transform ">
         <Image
-          src="/Hero.png"
+          src="/Hero.jpeg"
           alt="My Image"
           width={500}
           height={500}
-          className="rounded-xl object-cover shadow-lg"
+          className="shadow-lg"
         />
       </div>
     </section>

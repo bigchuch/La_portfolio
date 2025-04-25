@@ -5,8 +5,8 @@ import ProjectCard from "./ProjectCard";
 export default function ProjectsPage() {
   return (
     <div className="w-full">
-      <div className="p-4 pt-16 max-w-7xl mx-auto">
-        <div className="lg:w-[30%]   mx-auto  text-center lg:sticky lg:top-5 lg:left-0 lg:right-0 z-50 md:mb-10">
+      <div className="mx-auto max-w-7xl px-2 md:mt-24 ">
+        <div className="lg:w-[30%]  mx-auto  text-center lg:sticky lg:top-5 lg:left-0 lg:right-0 z-50 md:mb-10 ">
           <h1 className="text-4xl font-prata">Projects</h1>
         </div>
         
