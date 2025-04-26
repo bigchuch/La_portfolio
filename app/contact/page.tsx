@@ -39,7 +39,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="w-full mt-24">
+    <section className="w-full py-24">
       <div className="px-4 mx-auto max-w-screen-md">
         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
           Contact Us

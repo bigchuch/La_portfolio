@@ -41,7 +41,10 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
          
           <Navbar />
-          <main className="transition-colors duration-500 ease-in-out">{children}</main>
+          <main className="transition-colors duration-500 ease-in-out  w-full  
+            bg-gradient-to-r from-[#f8f9fa] via-[#e0e0e0] to-[#f8f9fa]
+          dark:from-[#000000] dark:via-[#2c2c2c] dark:to-[#000000]
+            bg-[length:200%_200%] animate-gradient ">{children}</main>
         </ThemeProvider>
       </body>
     </html>

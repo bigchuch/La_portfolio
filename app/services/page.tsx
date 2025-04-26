@@ -1,13 +1,18 @@
-import ServicesSection from "./ServicesSection";
+import { servicesDB } from "@/lib/servicesDB";
+import ServicesCard from "./ServicesCard";
 
 export default function ServicesPage() {
   return (
     <div className="w-full">
-      <div className="mx-auto max-w-7xl px-2 md:mt-24  ">
+      <div className="mx-auto max-w-7xl px-2 md:mt-24 h-screen  ">
         <div className="lg:w-[30%]   mx-auto  text-center lg:sticky lg:top-5 lg:left-0 lg:right-0 z-50 ">
           <h1 className="text-4xl font-prata">Services</h1>
         </div>
-        <ServicesSection />
+         <div className=" grid grid-cols-1 gap-4">
+                 {servicesDB.map((service) => (
+                   <ServicesCard key={service.title} {...service} />
+                 ))}
+                 </div>
       </div>
     </div>
   );
