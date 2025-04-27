@@ -12,6 +12,9 @@ export default function Technologies() {
             <Image
               src={tech.icon}
               alt={tech.name}
+              width={48}
+              height={48}
+              unoptimized={false}
               className="h-12 w-12 transition-transform duration-300 group-hover:-translate-y-1"
             />
             <span className="text-sm ">{tech.name}</span>
