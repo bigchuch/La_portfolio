@@ -1,4 +1,5 @@
 import {technologiesDb} from "@/lib/technologiesDb";
+import Image from "next/image";
 
 
 export default function Technologies() {
@@ -8,7 +9,7 @@ export default function Technologies() {
       <div className="flex flex-wrap justify-center gap-6">
         {technologiesDb.map((tech) => (
           <div key={tech.name} className="flex flex-col items-center gap-2 group">
-            <img
+            <Image
               src={tech.icon}
               alt={tech.name}
               className="h-12 w-12 transition-transform duration-300 group-hover:-translate-y-1"

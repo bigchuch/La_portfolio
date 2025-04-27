@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 import { ThemeToggle } from "./ThemeToggle";
-import { Home, Github ,Linkedin , Menu } from "lucide-react";
+import { Home, Menu } from "lucide-react";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import { motion } from "motion/react"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,8 @@ const Navbar = () => {
   const isContactPage = usePathname() === "/contact";
 
   return (
-    <div className="w-full z-10 fixed top-0 left-0 bg-white dark:bg-black shadow-md transition-transform duration-500 ease-in-out">
+    <motion.div initial={{ y: -100 }} animate={{ y: 0 }} exit={{ y: -100 }} transition={{ duration: .6 }}
+                className="w-full z-10 fixed top-0 left-0 bg-white dark:bg-black shadow-md transition-transform duration-500 ease-in-out">
 
       <nav className=" mx-auto max-w-7xl  flex items-center justify-between p-4 border-b">
         {/* Logo */}
@@ -126,7 +128,7 @@ const Navbar = () => {
           )}
 
       </nav>
-    </div>
+    </motion.div>
   );
 };
 

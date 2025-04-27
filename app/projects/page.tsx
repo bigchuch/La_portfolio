@@ -1,8 +1,7 @@
 // app/portfolio/page.tsx
 import { projectsDb } from "@/lib/projectsDb";
 import ProjectCard from "./ProjectCard";
-import { div } from "motion/react-client";
-import { motion } from "motion/react"
+
 
 export default function ProjectsPage() {
   return (

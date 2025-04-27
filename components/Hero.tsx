@@ -2,14 +2,22 @@
 
 import Link from "next/link";
 import { Github, Slack ,Linkedin   } from "lucide-react";
+import { motion } from "motion/react";
+
 
 const Hero = () => {
   return (
     <div className=" w-full  h-screen  ">
 
-      <div className="max-w-7xl mx-auto px-4 flex flex-col md:px-8 md:grid md:grid-cols-5 md:h-full gap-8 lg:gap-24 ">
+      <motion.div 
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+        exit={{ opacity: 0, y: -50 }}
+      className="max-w-7xl mx-auto px-4 flex flex-col md:px-8 md:grid md:grid-cols-5 md:h-full gap-8 lg:gap-24 ">
 
-        <div className="e md:flex md:flex-col col-span-2 md:justify-end md:pb-20">
+        <motion.div initial={{ opacity: 0, x:-200 }} animate={{ opacity: 2, x: 0 }} transition={{ duration: 0.5 }} exit={{ opacity: 0, scale: 0 }}
+        className=" md:flex md:flex-col col-span-2 md:justify-end md:pb-20">
           <div className="mt-16 font-geist-sans sm:w-fit pt-2  ">
             <div className="text-2xl font-bold py-4 md:text-2xl lg:text-3xl  font-prata ">Emmanuel    Olawale    <span className="text-blue-600">Alawode</span> </div>
             <div className=" text-1xl w-[90%] py-4 ">Software Engineer / Solution Achitech </div>
@@ -30,9 +38,10 @@ const Hero = () => {
               <Linkedin  className="w-6 h-6 font-bold " />
             </Link>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="  mt-8 font-prata text-[3.4em] flex flex-col gap-8 items-end md:items-start md:text-7xl lg:text-8xl xl:text-9xl md:justify-center md:col-span-3 overflow-clip ">
+        <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5 }} exit={{ opacity: 0, scale: 0 }} 
+        className="  mt-8 font-prata text-[3.4em] flex flex-col gap-8 items-end md:items-start md:text-7xl lg:text-8xl xl:text-9xl md:justify-center md:col-span-3 overflow-clip ">
 
           {/* navbar link */}
           <div className="">
@@ -57,11 +66,11 @@ const Hero = () => {
             </Link>
           </div>
 
-        </div>
+        </motion.div>
         
 
 
-      </div>
+      </motion.div>
 
     </div>
   );
