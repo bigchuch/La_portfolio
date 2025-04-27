@@ -39,12 +39,12 @@ const Contact = () => {
   };
 
   return (
-    <section className="w-full py-24">
+    <section className="w-full p-24">
       <div className="px-4 mx-auto max-w-screen-md">
-        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-          Contact Us
-        </h2>
-        <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+        <div className="lg:w-[30%]  mx-auto  text-center lg:sticky lg:top-5 lg:left-0 lg:right-0 lg:z-50  ">
+          <h1 className="text-4xl font-prata pb-8">Projects</h1>
+        </div>
+        <p className="mb-8 lg:mb-8 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
           Got a technical issue? Want to reach out to La.?
           Need details about our Business Relation plan? Let us know.
         </p>
