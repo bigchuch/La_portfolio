@@ -3,8 +3,8 @@ import ServicesCard from "./ServicesCard";
 
 export default function ServicesPage() {
   return (
-    <div className="w-full">
-      <div className="mx-auto max-w-7xl px-4 py-24 h-screen ">
+    <div className="w-full h-screen">
+      <div className="mx-auto max-w-[1024px] px-4 py-24 ">
         <div className="lg:w-[30%]   mx-auto  text-center lg:sticky lg:top-5 lg:left-0 lg:right-0 lg:z-50 ">
           <h1 className="text-4xl font-prata">Services</h1>
         </div>

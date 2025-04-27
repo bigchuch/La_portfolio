@@ -39,17 +39,17 @@ const Contact = () => {
   };
 
   return (
-    <section className="w-full p-24">
-      <div className="px-4 mx-auto max-w-screen-md">
+    <section className="w-full h-screen max-w-[768px] mx-auto">
+      <div className="px-4  pt-24">
         <div className="lg:w-[30%]  mx-auto  text-center lg:sticky lg:top-5 lg:left-0 lg:right-0 lg:z-50  ">
-          <h1 className="text-4xl font-prata pb-8">Projects</h1>
+          <h1 className="text-4xl font-prata ">Contact</h1>
         </div>
         <p className="mb-8 lg:mb-8 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
           Got a technical issue? Want to reach out to La.?
           Need details about our Business Relation plan? Let us know.
         </p>
 
-        <form className="space-y-8 p-4 rounded-xl border bg-white/50 dark:bg-white/5 border-black/20 dark:border-white/10  hover:-translate-y-1 transition-transform " onSubmit={handleSubmit}>
+        <form className="space-y-8 p-2 rounded-xl border bg-white/50 dark:bg-white/5 border-black/20 dark:border-white/10  hover:-translate-y-1 transition-transform " onSubmit={handleSubmit}>
           <div>
             <label
               htmlFor="name"
