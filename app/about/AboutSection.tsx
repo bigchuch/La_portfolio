@@ -6,7 +6,7 @@ const AboutSection = () => {
   return (
     <section className="pt-16  pb-8 px-4 overflow-clip md:flex md:justify-center md:gap-4">
       {/* About Text */}
-      <div className="p-4 h-[300px] w-[300px] overflow-scroll rounded-xl border bg-white/50 dark:bg-white/5 border-black/20 dark:border-white/10 light:border-black/10 light:bg-black/5 hover:-translate-y-1 transition-transform">
+      <div className="p-4 h-[300px] w-[300px] overflow-y-scroll  rounded-xl border bg-white/50 dark:bg-white/5 border-black/20 dark:border-white/10 light:border-black/10 light:bg-black/5 hover:-translate-y-1 transition-transform">
         <h2 className="mt-4 text-2xl font-semibold text-blue-500">
           Emmanuel Olawale <span className="text-black dark:text-white">Alawode</span>
         </h2>

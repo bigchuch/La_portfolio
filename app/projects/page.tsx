@@ -13,9 +13,9 @@ export default function ProjectsPage() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projectsDb.map((projects,index) => (
+        {projectsDb.map((projects) => (
           
-            <ProjectCard  {...projects} />
+            <ProjectCard key={projects.href} {...projects} />
           
         ))}
         </div>
