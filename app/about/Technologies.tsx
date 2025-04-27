@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Technologies() {
   return (
-    <section className="mt-8 md:mx-4 rounded-xl border bg-white/50 dark:bg-white/5 border-black/20 dark:border-white/10 p-6">
+    <section className="mt-8 mx-4 rounded-xl border bg-white/50 dark:bg-white/5 border-black/20 dark:border-white/10 p-6">
       <h2 className="text-center text-xl font-bold  mb-6">Technologies</h2>
       <div className="flex flex-wrap justify-center gap-6">
         {technologiesDb.map((tech) => (
