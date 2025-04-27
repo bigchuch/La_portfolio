@@ -1,6 +1,8 @@
 // app/portfolio/page.tsx
 import { projectsDb } from "@/lib/projectsDb";
 import ProjectCard from "./ProjectCard";
+import { div } from "motion/react-client";
+import { motion } from "motion/react"
 
 export default function ProjectsPage() {
   return (
@@ -11,8 +13,10 @@ export default function ProjectsPage() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projectsDb.map((projects) => (
-          <ProjectCard key={projects.href} {...projects} />
+        {projectsDb.map((projects,index) => (
+          
+            <ProjectCard  {...projects} />
+          
         ))}
         </div>
       </div>
