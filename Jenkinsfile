@@ -1,31 +1,40 @@
-#!/usr/bin.env groovy
+#!/usr/bin/env groovy 
 
-pipeline {   
-    agent any
-    stages {
-        stage("test") {
-            steps {
-                script {
-                    echo "Testing the application..."
+// Load the shared library from the specified Git repository
+library identifier: 'my-jenkins-library-project@main', retriever: modernSCM(
+    [$class: 'GitSCMSource',
+    remote: 'https://gitlab.com/bigchuch-devops-bootcamp/09-aws/my-jenkins-library-project.git',
+    credentialsId: 'docker-hub-repo' ]
+)
 
-                }
-            }
-        }
-        stage("build") {
-            steps {
-                script {
-                    echo "Building the application..."
-                }
-            }
-        }
-
-        stage("deploy") {
-            steps {
-                script {
-                    echo "Deploying the application..."
-                }
-            }
-        }               
+pipeline {
+    agent any 
+    tools {
+        nodejs 'my-nodejs'
+    } 
+    environment {
+        // VERSION = "1.0.0" // or use a parameter if needed
+        IMAGE_NAME = "bigchuch/demo-app:NEXTjs-${BUILD_NUMBER}"
     }
-} 
-
+    stages {
+        stage ('build app') {
+            steps {
+                script {
+                    echo 'building app'
+                    sh npm install
+                    sh npm run build 
+                }
+            }
+        }
+        stage ('Build image') {
+            steps {
+                script {
+                    echo "building image"
+                    buildNodeJsImage(IMAGE_NAME)
+                    dockerLogin()
+                    dockerPush(IMAGE_NAME)
+                }
+            }
+        }
+    }
+}
