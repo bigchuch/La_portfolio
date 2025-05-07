@@ -30,8 +30,8 @@ pipeline {
             steps {
                 script {
                     echo "building image"
-                    buildNodeJsImage(IMAGE_NAME)
                     dockerLogin()
+                    buildNodeJsImage(IMAGE_NAME)
                     dockerPush(IMAGE_NAME)
                 }
             }
