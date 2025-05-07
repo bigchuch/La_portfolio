@@ -30,16 +30,8 @@ pipeline {
             steps {
                 script {
                     echo "building image"
-                    echo 'login into docker hub...'
-                    sh '''
-                        export DOCKER_CONFIG="$(mktemp -d)"
-                        echo '{}' > "$DOCKER_CONFIG/config.json"
-                    '''
-                    withCredentials([usernamePassword(credentialsId: 'docker-hub-repo', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
-                    sh 'echo $PASS | docker login -u $USER --password-stdin'
-                    }
-
-                    // dockerLogin()
+                    
+                    dockerLogin()
                     buildNodeJsImage(IMAGE_NAME)
                     dockerPush(IMAGE_NAME)
                 }
