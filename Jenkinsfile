@@ -14,7 +14,7 @@ pipeline {
     } 
     environment {
         // VERSION = "1.0.0" // or use a parameter if needed
-        IMAGE_NAME = "bigchuch/demo-app:NEXTjs-${BUILD_NUMBER}"
+        IMAGE_NAME = "NEXTjs-${BUILD_NUMBER}"
     }
     stages {
         stage ('build app') {
