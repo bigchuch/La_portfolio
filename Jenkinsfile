@@ -21,8 +21,8 @@ pipeline {
             steps {
                 script {
                     echo 'building app'
-                    // sh 'npm install'
-                    // sh 'npm run build' 
+                    sh 'npm install'
+                    sh 'npm run build' 
                 }
             }
         }
