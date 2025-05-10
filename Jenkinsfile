@@ -17,15 +17,15 @@ pipeline {
         IMAGE_NAME = "nextjs-${BUILD_NUMBER}"
     }
     stages {
-        stage ('build app') {
-            steps {
-                script {
-                    echo 'building app'
-                    sh 'npm install'
-                    sh 'npm run build' 
-                }
-            }
-        }
+        // stage ('build app') {
+        //     steps {
+        //         script {
+        //             echo 'building app'
+        //             sh 'npm install'
+        //             sh 'npm run build' 
+        //         }
+        //     }
+        // }
         stage ('Build image') {
             steps {
                 script {
