@@ -12,7 +12,7 @@ pipeline {
     tools {
         nodejs 'nodejs'
     } 
-    environment 
+    environment {
         // VERSION = "1.0.0" // or use a parameter if needed
         IMAGE_NAME = "bigchuch/nodejs-app:nextjs-${BUILD_NUMBER}"
     }
@@ -38,4 +38,5 @@ pipeline {
             }
         }
     }
+}
 
